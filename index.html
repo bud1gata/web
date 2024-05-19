@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SICEPU</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="javascript" href="js/bootstrap.min.js">
+	<link rel="icon" href="https://smkmuh1turi.sch.id/wp-content/uploads/2023/07/a4f6d36a-f30f-43b3-bdfb-61344dacf2c4.png" sizes="192x192" />
+</head>
+<body>
+		<section class="h-100 gradient-form" style="background-color: #eee;">
+	  <div class="container py-5 h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+		  <div class="col-xl-10">
+			<div class="card rounded-3 text-black">
+			  <div class="row g-0">
+				<div class="col-lg-6">
+				  <div class="card-body p-md-5 mx-md-4">
+					<div class="text-center">
+				<!-- #header form-->
+					  <img src="img/logo.png"
+						style="width: 185px;" alt="logo">
+					  <h4 class="mt-1 mb-5 pb-1">Sistem Cek Pra Ujian (SICEPU)</h4>
+					</div>
+				<!-- #form-->
+					<form id="studentForm">
+					 <label class="form-label" for="studentNumber">Masukkan Nomor Induk Siswa!</label>
+					  <div data-mdb-input-init class="form-outline mb-4">
+						<input type="text" id="studentNumber" name="studentNumber" class="form-control"
+						  placeholder="Contoh: 2024031001" />
+					  </div>
+				<!-- #footer form-->
+					  <div class="text-center pt-1 mb-5 pb-1">
+						<button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg mb-3" type="submit">Cek Status</button>
+						<a href="https://smkmuh1turi.sch.id">
+						<button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger">Kembali Ke Website Sekolah</button>
+						</a>
+					  </div>
+					</form>
+				  </div>
+				</div>
+				<!-- #sidebar-->
+				<div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+				  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+					<h4 class="mb-4">Informasi Penting:</h4>
+					<p class="small mb-0">Jika muncul pemberitahuan bahwa belum bisa mengikuti ujian maka segera lakukan pembayaran, namun bila merasa sudah menyelesaikan pembayaran segera hubungi wali kelas untuk memperbaharui data sekolah.</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+			<div class="text-center pt-1 mb-5">
+				<a class="text-muted" href="http://budiputra.web.id" style="text-decoration:none">Copyright budi putra</a>
+			</div>
+	  </div>
+	</section>
+ <!-- Bootstrap Modal -->
+  <div class="modal fade" id="resultModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title fs-5">Hasil Pengecekan</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p id="resultText"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/javascript.js"></script>
+	<script src="js/ext.js"></script>
+	<script src="js/ext2.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
+
+
