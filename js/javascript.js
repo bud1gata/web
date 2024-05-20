@@ -14,11 +14,18 @@ document.getElementById('studentForm').addEventListener('submit', function(event
   if (studentNumbers.includes(studentNumber)) {
     // Display success message in modal
     document.getElementById('resultText').textContent = `Alhamdulillah, Nomor Induk Siswa (NIS): "${studentNumber}" telah dapat mengikuti ujian.`;
+    document.getElementById('modalBody').classList.add('bg-info');
   } else {
     // Display error message in modal
     document.getElementById('resultText').textContent = `Mohon maaf Nomor Induk Siswa (NIS): "${studentNumber}" belum dapat mengikuti ujian.`;
+    document.getElementById('modalBody').classList.add('bg-danger');
   }
 
   // Show the modal
   $('#resultModal').modal('show');
 });
+  // Add event listener to the button
+  document.getElementById('refreshButton').addEventListener('click', function() {
+    // Reload the page
+    location.reload();
+  });
