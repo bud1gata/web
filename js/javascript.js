@@ -5,18 +5,18 @@ document.getElementById('studentForm').addEventListener('submit', function(event
 
   // Check if the input is empty
   if (studentNumber === '') {
-    alert('Please enter a student number');
+    alert('Mohon masukkan Nomor Induk Siswa (NIS) terlebih dahulu');
     return;
   }
 
   // Check if the student number is in the array
-  const studentNumbers = ['123', '456', '789']; // Example array
+  const studentNumbers = ['123', '456', '789']; // Input array
   if (studentNumbers.includes(studentNumber)) {
     // Display success message in modal
-    document.getElementById('resultText').textContent = `Alhamdulillah, Nomor Induk Siswa: ${studentNumber} anda telah siap untuk ujian.`;
+    document.getElementById('resultText').textContent = `Alhamdulillah, Nomor Induk Siswa (NIS): "${studentNumber}" telah dapat mengikuti ujian.`;
   } else {
     // Display error message in modal
-    document.getElementById('resultText').textContent = `Student number ${studentNumber} does not exist in the system.`;
+    document.getElementById('resultText').textContent = `Mohon maaf Nomor Induk Siswa (NIS): "${studentNumber}" belum dapat mengikuti ujian.`;
   }
 
   // Show the modal
