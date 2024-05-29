@@ -10,7 +10,16 @@ document.getElementById('studentForm').addEventListener('submit', function(event
   }
 
   // Check if the student number is in the array
-  const studentNumbers = ['1003','1004','1008','1009','1011','1013','1020','1022','1027','1029','1033','1036','1039','1040','1044','1046','2002','2005','2007','2009','2010','2011','2016','2018','2020','2025','2026','2030','2035','2038']; // Input array
+  const studentNumbers = ['1003','1004','1007','1008','1009',
+  '1011','1013',
+  '1020','1022','1024','1025','1026','1027','1029',
+  '1031','1032','1033','1034','1035','1036','1037','1038','1039',
+  '1040','1041','1044','1045','1046',
+  '2002','2004','2005','2006','2007','2009','2010',
+  '2011','2016','2018',
+  '2020','2025','2026','2027','2028',
+  '2030','2035','2036','2038','2039',
+  '2043']; // Input array
   if (studentNumbers.includes(studentNumber)) {
     // Display success message in modal
     document.getElementById('resultText').textContent = `Alhamdulillah, Nomor Kode Ujian : "${studentNumber}" telah dapat mengikuti ujian.`;
